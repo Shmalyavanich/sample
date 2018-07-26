@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+        <title>Todo</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="todo">
+                <div class="todo__holder">
+                    <div class="todo__list-holder">
+                        <div class="todo__list js-todo__list"></div>
+
+                        <div class="todo__list-buttons">
+                            <button class="button js-add-item">add new item</button>
+                        </div>
+
+                    </div>
+
+                    <form class="todo__form js-todo-form">
+                        <div class="todo__form-row">
+                            <input name="caption" type="text" placeholder="Caption">
+                            <input name="finishDate" type="text" placeholder="Date">
+                            <input name="id" type="hidden" value="0">
+                        </div>
+
+                        <div class="todo__form-row">
+                            <textarea name="description" placeholder="Description"></textarea>
+                        </div>
+
+                        <div class="todo__form-row">
+                            <div class="todo__status">
+                                <input name="status" type="hidden" value="NEW">
+                                status: <span class="todo__status-name js-item-status">NEW</span>
+                            </div>
+                        </div>
+
+                        <div class="todo__form-row">
+                            <button class="button js-save-item">save</button>
+                            <button class="button js-update-status">change status</button>
+                            <button class="button js-delete-item" disabled>delete</button>
+                        </div>
+                    </form>
+
+                    <div class="todo__item-desc hidden js-item-desc">
+                        <div class="todo__item-desc-content js-item-desc-content"></div>
+                    </div>
+                </div>
+
+                <div class="todo__loader js-todo__loader">
+                    <div class="todo__spin"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
